@@ -2,7 +2,7 @@
 import logging
 from typing import Any, Dict, Mapping, Union
 
-from ..events import WaterInfoEvent
+from events import WaterInfoEvent
 from .base import DisplayNameIntEnum, SetCommand, VacuumEmitter, _NoArgsCommand
 
 _LOGGER = logging.getLogger(__name__)

@@ -2,7 +2,7 @@
 import logging
 from typing import Any, Dict
 
-from ..events import StatsEvent
+from events import StatsEvent
 from .base import VacuumEmitter, _NoArgsCommand
 
 _LOGGER = logging.getLogger(__name__)

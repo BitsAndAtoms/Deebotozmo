@@ -2,10 +2,10 @@
 import logging
 from typing import Any, Dict, Mapping, Union
 
-from deebotozmo.commands import SetCommand
-from deebotozmo.commands.base import DisplayNameIntEnum, _NoArgsCommand
-from deebotozmo.event_emitter import VacuumEmitter
-from deebotozmo.events import FanSpeedEvent
+from  commands import SetCommand
+from  commands.base import DisplayNameIntEnum, _NoArgsCommand
+from  event_emitter import VacuumEmitter
+from  events import FanSpeedEvent
 
 _LOGGER = logging.getLogger(__name__)
 

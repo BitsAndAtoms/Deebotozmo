@@ -2,8 +2,8 @@
 import logging
 from typing import Any, Dict
 
-from ..events import StatusEvent
-from ..models import VacuumState
+from events import StatusEvent
+from models import VacuumState
 from .base import VacuumEmitter, _ExecuteCommand
 
 _LOGGER = logging.getLogger(__name__)

@@ -23,13 +23,13 @@ import logging
 import random
 import string
 
-from deebotozmo.commands import *
-from deebotozmo.commands.clean import CleanAction
-from deebotozmo.ecovacs_api import EcovacsAPI
-from deebotozmo.ecovacs_mqtt import EcovacsMqtt
-from deebotozmo.events import BatteryEvent
-from deebotozmo.util import md5
-from deebotozmo.vacuum_bot import VacuumBot
+from  commands import *
+from  commands.clean import CleanAction
+from  ecovacs_api import EcovacsAPI
+from  ecovacs_mqtt import EcovacsMqtt
+from  events import BatteryEvent
+from  util import md5
+from  vacuum_bot import VacuumBot
 
 device_id = "".join(random.choice(string.ascii_uppercase + string.digits) for _ in range(12))
 email = "your email or phonenumber (cn)"
@@ -65,7 +65,7 @@ async def main():
 
     # Execute commands
     await bot.execute_command(Clean(CleanAction.START))
-    await asyncio.sleep(900)  # Wait for...
+    await asyncio.sleep(900)  # Wait for .
     await bot.execute_command(Charge())
 
 

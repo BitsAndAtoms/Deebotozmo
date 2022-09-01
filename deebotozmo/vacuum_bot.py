@@ -7,7 +7,7 @@ from typing import Any, Dict, Final, Optional, Union
 
 import aiohttp
 
-from deebotozmo.commands import (
+from  commands import (
     COMMANDS,
     Clean,
     Command,
@@ -23,12 +23,12 @@ from deebotozmo.commands import (
     GetStats,
     GetWaterInfo,
 )
-from deebotozmo.commands.clean import CleanAction
-from deebotozmo.commands.custom import CustomCommand
-from deebotozmo.ecovacs_api import EcovacsAPI
-from deebotozmo.ecovacs_json import EcovacsJSON
-from deebotozmo.event_emitter import EventEmitter, PollingEventEmitter, VacuumEmitter
-from deebotozmo.events import (
+from  commands.clean import CleanAction
+from  commands.custom import CustomCommand
+from  ecovacs_api import EcovacsAPI
+from  ecovacs_json import EcovacsJSON
+from  event_emitter import EventEmitter, PollingEventEmitter, VacuumEmitter
+from  events import (
     BatteryEvent,
     CleanLogEvent,
     CustomCommandEvent,
@@ -39,9 +39,9 @@ from deebotozmo.events import (
     StatusEvent,
     WaterInfoEvent,
 )
-from deebotozmo.map import Map
-from deebotozmo.models import RequestAuth, Vacuum, VacuumState
-from deebotozmo.util import get_refresh_function
+from  map import Map
+from  models import RequestAuth, Vacuum, VacuumState
+from  util import get_refresh_function
 
 _LOGGER = logging.getLogger(__name__)
 

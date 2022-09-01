@@ -2,7 +2,7 @@
 import logging
 from typing import Any, Dict, List, Optional
 
-from ..events import CleanLogEntry, CleanLogEvent
+from events import CleanLogEntry, CleanLogEvent
 from .base import CommandWithHandling, VacuumEmitter
 
 _LOGGER = logging.getLogger(__name__)

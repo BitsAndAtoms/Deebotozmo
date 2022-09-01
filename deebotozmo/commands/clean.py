@@ -3,9 +3,9 @@ import logging
 from enum import Enum, unique
 from typing import Any, Dict, Optional
 
-from ..event_emitter import VacuumEmitter
-from ..events import StatusEvent
-from ..models import VacuumState
+from  event_emitter import VacuumEmitter
+from events import StatusEvent
+from models import VacuumState
 from .base import _ExecuteCommand, _NoArgsCommand
 
 _LOGGER = logging.getLogger(__name__)

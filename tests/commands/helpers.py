@@ -1,6 +1,6 @@
 from typing import Set, Type
 
-from deebotozmo.commands.base import DisplayNameIntEnum
+from  commands.base import DisplayNameIntEnum
 
 
 def verify_DisplayNameEnum_unique(enum: Type[DisplayNameIntEnum]):

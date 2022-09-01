@@ -10,7 +10,7 @@ from typing import Any, Awaitable, Callable, Dict, Final, List, Optional, Union
 from numpy import ndarray, reshape, zeros
 from PIL import Image, ImageDraw, ImageOps
 
-from deebotozmo.commands import (
+from  commands import (
     Command,
     GetCachedMapInfo,
     GetMajorMap,
@@ -20,10 +20,10 @@ from deebotozmo.commands import (
     GetMinorMap,
     GetPos,
 )
-from deebotozmo.event_emitter import EventEmitter, MapEmitter
-from deebotozmo.events import MapEvent, RoomsEvent
-from deebotozmo.models import Coordinate, Room
-from deebotozmo.util import get_refresh_function
+from  event_emitter import EventEmitter, MapEmitter
+from  events import MapEvent, RoomsEvent
+from  models import Coordinate, Room
+from  util import get_refresh_function
 
 _LOGGER = logging.getLogger(__name__)
 _TRACE_MAP = "trace_map"
@@ -440,7 +440,7 @@ class Map:
             new_size = (width, height)
         elif cropped.size[0] > 400 or cropped.size[1] > 400:
             _LOGGER.debug(
-                "[get_base64_map] Resize disabled.. map over 400 and image width was passed"
+                "[get_base64_map] Resize disabled  map over 400 and image width was passed"
             )
         else:
             resize_factor = Map.RESIZE_FACTOR

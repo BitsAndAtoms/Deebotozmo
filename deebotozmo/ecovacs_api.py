@@ -7,8 +7,8 @@ from typing import Any, Dict, List, Optional, Union
 import aiohttp
 from aiohttp import hdrs
 
-from deebotozmo.models import RequestAuth, Vacuum
-from deebotozmo.util import md5, sanitize_data, str_to_bool_or_cert
+from  models import RequestAuth, Vacuum
+from  util import md5, sanitize_data, str_to_bool_or_cert
 
 _LOGGER = logging.getLogger(__name__)
 

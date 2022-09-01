@@ -7,10 +7,10 @@ from typing import Any, Dict, Tuple, Union
 import aiohttp
 from aiohttp import ClientResponseError
 
-from deebotozmo.commands import Command, GetCleanLogs
-from deebotozmo.commands.custom import CustomCommand
-from deebotozmo.models import RequestAuth, Vacuum
-from deebotozmo.util import sanitize_data
+from  commands import Command, GetCleanLogs
+from  commands.custom import CustomCommand
+from  models import RequestAuth, Vacuum
+from  util import sanitize_data
 
 _LOGGER = logging.getLogger(__name__)
 

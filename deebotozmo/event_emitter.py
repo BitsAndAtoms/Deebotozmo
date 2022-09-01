@@ -5,7 +5,7 @@ from asyncio import Task
 from dataclasses import dataclass
 from typing import Awaitable, Callable, Final, Generic, List, Optional, TypeVar
 
-from deebotozmo.events import (
+from  events import (
     BatteryEvent,
     CleanLogEvent,
     CustomCommandEvent,
@@ -18,7 +18,7 @@ from deebotozmo.events import (
     StatusEvent,
     WaterInfoEvent,
 )
-from deebotozmo.models import VacuumState
+from  models import VacuumState
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -91,12 +91,12 @@ class EventEmitter(Generic[T]):
                 asyncio.create_task(subscriber.callback(event))
             return True
 
-        _LOGGER.debug("No subscribers... Discharging %s", event)
+        _LOGGER.debug("No subscribers . Discharging %s", event)
         return False
 
     async def _call_refresh_function(self) -> None:
         if self._semaphore.locked():
-            _LOGGER.debug("Already refresh function running. Skipping...")
+            _LOGGER.debug("Already refresh function running. Skipping .")
             return
 
         async with self._semaphore:

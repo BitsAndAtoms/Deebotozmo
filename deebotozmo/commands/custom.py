@@ -1,8 +1,8 @@
 """Custom command module."""
 from typing import Any, Dict, List, Union
 
-from deebotozmo.event_emitter import _LOGGER, VacuumEmitter
-from deebotozmo.events import CustomCommandEvent
+from  event_emitter import _LOGGER, VacuumEmitter
+from  events import CustomCommandEvent
 
 
 class CustomCommand:

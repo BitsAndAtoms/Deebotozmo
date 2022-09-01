@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, TypedDict
 
-from deebotozmo.models import Room, VacuumState
+from  models import Room, VacuumState
 
 
 @dataclass

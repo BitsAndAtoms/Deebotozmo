@@ -3,7 +3,7 @@ import logging
 from enum import Enum, unique
 from typing import List
 
-from ..events import LifeSpanEvent
+from events import LifeSpanEvent
 from .base import CommandWithHandling, VacuumEmitter
 
 _LOGGER = logging.getLogger(__name__)

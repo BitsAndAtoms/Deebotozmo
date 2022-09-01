@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from enum import IntEnum, unique
 from typing import Any, Dict, List, Mapping, Optional, Tuple, Type, Union
 
-from deebotozmo.event_emitter import VacuumEmitter
+from  event_emitter import VacuumEmitter
 
 _LOGGER = logging.getLogger(__name__)
 

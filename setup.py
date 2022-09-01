@@ -35,7 +35,7 @@ setup(
     install_requires=list(val.strip() for val in open("requirements.txt")),
     entry_points={
         "console_scripts": [
-            "deebotozmo=deebotozmo.cli:cli",
+            "deebotozmo= cli:cli",
         ],
     },
 )

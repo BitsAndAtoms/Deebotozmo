@@ -18,10 +18,10 @@ from typing import Any, Callable, Dict, List, Mapping, Optional, Tuple, Union
 import aiohttp
 import click
 
-from deebotozmo.commands import Charge, Clean, PlaySound, SetFanSpeed, SetWaterInfo
-from deebotozmo.commands.clean import CleanAction, CleanArea, CleanMode
-from deebotozmo.ecovacs_api import EcovacsAPI
-from deebotozmo.events import (
+from commands import Charge, Clean, PlaySound, SetFanSpeed, SetWaterInfo
+from commands.clean import CleanAction, CleanArea, CleanMode
+from ecovacs_api import EcovacsAPI
+from events import (
     BatteryEvent,
     CleanLogEvent,
     FanSpeedEvent,
@@ -32,9 +32,9 @@ from deebotozmo.events import (
     StatusEvent,
     WaterInfoEvent,
 )
-from deebotozmo.models import Vacuum, VacuumState
-from deebotozmo.util import md5
-from deebotozmo.vacuum_bot import VacuumBot
+from  models import Vacuum, VacuumState
+from  util import md5
+from  vacuum_bot import VacuumBot
 
 SECTION_DEFAULT = "DEFAULT"
 DEVICE = "DEVICE"
@@ -54,8 +54,8 @@ def coro(func: Callable) -> Callable:
 def config_file() -> str:
     """Return the path to config file."""
     if platform.system() == "Windows" and "APPDATA" in os.environ:
-        return os.path.join(str(os.getenv("APPDATA")), "deebotozmo.conf")
-    return os.path.expanduser("~/.config/deebotozmo.conf")
+        return os.path.join(str(os.getenv("APPDATA")), " conf")
+    return os.path.expanduser("~/.config/ conf")
 
 
 def config_file_exists() -> bool:

@@ -1,4 +1,4 @@
-from deebotozmo.commands import FanSpeedLevel
+from  commands import FanSpeedLevel
 
 from .helpers import verify_DisplayNameEnum_unique
 

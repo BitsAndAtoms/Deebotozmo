@@ -1,6 +1,6 @@
 from typing import Set
 
-from deebotozmo.commands import WaterLevel
+from  commands import WaterLevel
 
 from .helpers import verify_DisplayNameEnum_unique
 
